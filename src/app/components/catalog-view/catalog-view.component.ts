@@ -13,7 +13,6 @@ export class CatalogViewComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    console.log("current",this.catalog);
   }
 
 }

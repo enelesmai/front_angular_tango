@@ -11,8 +11,8 @@ export class CatalogComponent implements OnInit {
   public currentIndex: number;
   public catalogs: Array<Catalog> = [
     {
-      thumb: '/assets/images/thumb/tea-light-thumb.jpeg',
-      image: '/assets/images/tea-light.jpeg'
+      thumb: '/assets/images/thumb/mobile-front-thumb.jpeg',
+      image: '/assets/images/mobile-front.jpeg'
     },
     {
       thumb: '/assets/images/thumb/white-light-thumb.jpeg',
