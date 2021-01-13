@@ -51,9 +51,13 @@ export class CatalogComponent implements OnInit {
     this.selectedCatalog(this.currentIndex===this.catalogs.length-1 ? 0: this.currentIndex +1);
   }
 
+  changeSlideStatus(event){
+    this.slideAtive = event.target.checked;
+    this.slideChange(this.slideAtive);
+  }
+
   slideChange(checked) {
-    this.slideAtive = checked.target.checked;
-    if (this.slideAtive) {
+    if (checked) {
       this.nextClick();
       this.slideTimer = this.onSlideChange();
     } else {
