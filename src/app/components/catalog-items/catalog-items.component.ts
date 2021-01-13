@@ -18,7 +18,6 @@ export class CatalogItemsComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log("catalgos",this.items);
   }
 
   onImageSelect(index) {
