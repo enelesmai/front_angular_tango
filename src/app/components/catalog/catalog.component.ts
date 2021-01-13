@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CatalogComponent implements OnInit {
 
   public catalogSelected: Catalog;
-  currentIndex: number;
+  public currentIndex: number;
   slideAtive = false;
   slideDuration = 3000;
   slideTimer = null;

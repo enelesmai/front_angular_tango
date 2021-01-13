@@ -13,7 +13,7 @@
         <div class="next" >
             <img src="../../../assets/icons/right_icon.png">
         </div>
-        <app-catalog-items [catalogs]='catalogs' ></app-catalog-items>
+        <app-catalog-items [catalogs]='catalogs' [currentIndex]='currentIndex' (selectedCatalog)="selectedCatalog($event)" ></app-catalog-items>
     </div>
     
      <div class="slide-input">
