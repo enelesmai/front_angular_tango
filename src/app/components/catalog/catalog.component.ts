@@ -39,6 +39,7 @@ export class CatalogComponent implements OnInit {
   }
 
   selectedCatalog(index: number) {
+    this.currentIndex = index;
     this.catalogSelected = this.catalogs[index];
   }
 
