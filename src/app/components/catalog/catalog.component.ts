@@ -9,9 +9,6 @@ export class CatalogComponent implements OnInit {
 
   public catalogSelected: Catalog;
   public currentIndex: number;
-  slideAtive = false;
-  slideDuration = 3000;
-  slideTimer = null;
   public catalogs: Array<Catalog> = [
     {
       thumb: '/assets/images/thumb/tea-light-thumb.jpeg',
@@ -30,7 +27,10 @@ export class CatalogComponent implements OnInit {
       image: '/assets/images/tea-light.jpeg',
     }
   ];
-
+  slideAtive = false;
+  slideDuration = 3000;
+  slideTimer = null;
+  
   constructor() { }
 
   ngOnInit() {
@@ -52,15 +52,23 @@ export class CatalogComponent implements OnInit {
   }
 
   slideChange(checked) {
-    
+    this.slideAtive = checked.target.checked;
+    if (this.slideAtive) {
+      this.nextClick();
+      this.slideTimer = this.onSlideChange();
+    } else {
+      this.resetSlideTimer();
+    }
   }
 
   resetSlideTimer() {
-    
+    clearTimeout(this.slideTimer);
   }
 
   onSlideChange = function() {
-    
+    return setInterval(()=>{
+      this.nextClick();
+    }, this.slideDuration);
   }
 }
 
