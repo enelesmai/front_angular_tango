@@ -9,10 +9,11 @@ import { Catalog } from '../catalog/catalog.component';
 })
 export class CatalogViewComponent implements OnInit {
 
-  @Input() catalog: Catalog;
+  @Input('current_view') catalog: Catalog;
   constructor() {}
 
   ngOnInit() {
+    console.log("current",this.catalog);
   }
 
 }

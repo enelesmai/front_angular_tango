@@ -8,12 +8,13 @@ import { Catalog } from '../catalog/catalog.component';
 })
 export class CatalogItemsComponent implements OnInit {
 
-  @Input() items: Array<Catalog> = [];
+  @Input('catalogs') items: Array<Catalog>;
   @Input() currentIndex: number;
   @Output() selectedCatalog: EventEmitter<number> = new EventEmitter<number>();
   constructor() { }
 
   ngOnInit() {
+    console.log("catalgos",this.items);
   }
 
   onImageSelect() {

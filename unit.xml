@@ -1,24 +1,223 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 76.0.3809 (Mac OS X 10.14.5)" package="unit" timestamp="2019-08-13T01:39:39" id="0" hostname="Gopals-MacBook-Pro.local" tests="16" errors="0" failures="0" time="0.815">
+<testsuite name="HeadlessChrome 87.0.4280 (Windows 10.0.0)" package="unit" timestamp="2021-01-13T15:10:01" id="0" hostname="XFLORES-LAPTOP" tests="16" errors="1" failures="16" time="0.839">
   <properties>
-    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3809.100 Safari/537.36"/>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/87.0.4280.141 Safari/537.36"/>
   </properties>
-  <testcase name="AppComponent should create the catalog-viewer app" time="0.16" classname="unit.AppComponent"/>
-  <testcase name="AppComponent page should contain the catalog UI elements" time="0.098" classname="unit.AppComponent"/>
-  <testcase name="CatalogItemComponent the first catalog thumb should have a background image &quot;/assets/images/thumb/mobile-front-thumb.jpeg&quot;" time="0.018" classname="unit.CatalogItemComponent"/>
-  <testcase name="CatalogItemsComponent catalog thumb icons length should be equal to catalog items length" time="0.031" classname="unit.CatalogItemsComponent"/>
-  <testcase name="CatalogItemsComponent click/hover on catalog thumb should update the viewer image" time="0.025" classname="unit.CatalogItemsComponent"/>
-  <testcase name="CatalogItemsComponent selected thumb should be highlighted with blue border by applying css class &quot;thumb-select" time="0.031" classname="unit.CatalogItemsComponent"/>
-  <testcase name="CatalogViewComponent catalog view should display first img element by default" time="0.017" classname="unit.CatalogViewComponent"/>
-  <testcase name="CatalogComponent should catalog-view load with first item of catalog" time="0.043" classname="unit.CatalogComponent"/>
-  <testcase name="CatalogComponent Clicking on previous button should show the previous image" time="0.042" classname="unit.CatalogComponent"/>
-  <testcase name="CatalogComponent Clicking on next button should show the next image" time="0.046" classname="unit.CatalogComponent"/>
-  <testcase name="CatalogComponent Clicking on next button in the last item should show the first image" time="0.058" classname="unit.CatalogComponent"/>
-  <testcase name="CatalogComponent Clicking on previous button in the first item should show the last image" time="0.035" classname="unit.CatalogComponent"/>
-  <testcase name="CatalogComponent Clicking on any indicator icon should show the appropriate image" time="0.047" classname="unit.CatalogComponent"/>
-  <testcase name="CatalogComponent when slide enabled should change the image for every 3 seconds" time="0.039" classname="unit.CatalogComponent"/>
-  <testcase name="CatalogComponent when slide enabled also user interaction like previous, next or indecator should work as expected" time="0.089" classname="unit.CatalogComponent"/>
-  <testcase name="CatalogComponent uncheck slide should stop changing the image for every 3 seconds" time="0.036" classname="unit.CatalogComponent"/>
+  <testcase name="CatalogItemsComponent selected thumb should be highlighted with blue border by applying css class &quot;thumb-select" time="0.022" classname="unit.CatalogItemsComponent">
+    <failure type="">Expected 'catalog item' to contain 'thumb-select'.
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog-items/catalog-items.component.spec.ts?:65:36)
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/@angular/core/@angular/core/testing.es5.js?:374:26)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:128:39)
+</failure>
+    <failure type="">Expected 'catalog item' to contain 'thumb-select'.
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog-items/catalog-items.component.spec.ts?:69:40)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
+</failure>
+  </testcase>
+  <testcase name="CatalogViewComponent catalog view should display first img element by default" time="0.015" classname="unit.CatalogViewComponent">
+    <failure type="">Expected '' to contain '/assets/images/tea-light.jpeg'.
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog-view/catalog-view.component.spec.ts?:48:31)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at AsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/async-test.js?:106:39)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
+</failure>
+  </testcase>
+  <testcase name="CatalogComponent should catalog-view load with first item of catalog" time="0.061" classname="unit.CatalogComponent">
+    <failure type="">TypeError: Cannot read property 'image' of undefined
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:82:42)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:128:39)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:387:32)
+    at Zone.run (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:138:43)
+    at runInTestZone (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/jasmine-patch.js?:139:34)
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/jasmine-patch.js?:154:20)
+</failure>
+  </testcase>
+  <testcase name="CatalogComponent catalog thumb icons length should be equal to catalog items length" time="0.044" classname="unit.CatalogComponent">
+    <failure type="">Expected 0 to be 4.
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:90:30)
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/@angular/core/@angular/core/testing.es5.js?:374:26)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:128:39)
+</failure>
+  </testcase>
+  <testcase name="CatalogComponent Clicking on previous button should show the previous image" time="0.071" classname="unit.CatalogComponent">
+    <failure type="">Error: Uncaught (in promise): TypeError: Cannot read property 'image' of undefined
+TypeError: Cannot read property 'image' of undefined
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:100:46)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:387:32)
+    at Zone.run (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:138:43)
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:882:34)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:421:31)
+    at ProxyZoneSpec.onInvokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:159:39)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:420:36)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:421:31)
+    at ProxyZoneSpec.onInvokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:159:39)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:420:36)
+    at resolvePromise (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:824:31)
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:887:17)
+    at Zone.runTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:188:47)
+    at ZoneTask.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:496:34)
+    at ZoneTask.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:485:48)
+    at FakeAsyncTestZoneSpec.flushMicrotasks (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:346:32)
+    at flushMicrotasks (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/@angular/core/@angular/core/testing.es5.js?:446:29)
+</failure>
+  </testcase>
+  <testcase name="CatalogComponent Clicking on next button should show the next image" time="0.065" classname="unit.CatalogComponent">
+    <failure type="">Error: Uncaught (in promise): TypeError: Cannot read property 'image' of undefined
+TypeError: Cannot read property 'image' of undefined
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:110:46)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:387:32)
+    at Zone.run (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:138:43)
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:882:34)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:421:31)
+    at ProxyZoneSpec.onInvokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:159:39)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:420:36)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:421:31)
+    at ProxyZoneSpec.onInvokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:159:39)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:420:36)
+    at resolvePromise (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:824:31)
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:887:17)
+    at Zone.runTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:188:47)
+    at ZoneTask.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:496:34)
+    at ZoneTask.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:485:48)
+    at FakeAsyncTestZoneSpec.flushMicrotasks (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:346:32)
+    at flushMicrotasks (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/@angular/core/@angular/core/testing.es5.js?:446:29)
+</failure>
+  </testcase>
+  <testcase name="CatalogComponent Clicking on next button in the last item should show the first image" time="0.057" classname="unit.CatalogComponent">
+    <failure type="">Error: Uncaught (in promise): TypeError: Cannot read property 'image' of undefined
+TypeError: Cannot read property 'image' of undefined
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:123:46)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:387:32)
+    at Zone.run (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:138:43)
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:882:34)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:421:31)
+    at ProxyZoneSpec.onInvokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:159:39)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:420:36)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:421:31)
+    at ProxyZoneSpec.onInvokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:159:39)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:420:36)
+    at resolvePromise (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:824:31)
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:887:17)
+    at Zone.runTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:188:47)
+    at ZoneTask.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:496:34)
+    at ZoneTask.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:485:48)
+    at FakeAsyncTestZoneSpec.flushMicrotasks (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:346:32)
+    at flushMicrotasks (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/@angular/core/@angular/core/testing.es5.js?:446:29)
+</failure>
+  </testcase>
+  <testcase name="CatalogComponent Clicking on previous button in the first item should show the last image" time="0.045" classname="unit.CatalogComponent">
+    <failure type="">Error: Uncaught (in promise): TypeError: Cannot read property 'image' of undefined
+TypeError: Cannot read property 'image' of undefined
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:133:46)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:387:32)
+    at Zone.run (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:138:43)
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:882:34)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:421:31)
+    at ProxyZoneSpec.onInvokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:159:39)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:420:36)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:421:31)
+    at ProxyZoneSpec.onInvokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:159:39)
+    at ZoneDelegate.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:420:36)
+    at resolvePromise (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:824:31)
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:887:17)
+    at Zone.runTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:188:47)
+    at ZoneTask.invokeTask (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:496:34)
+    at ZoneTask.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:485:48)
+    at FakeAsyncTestZoneSpec.flushMicrotasks (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:346:32)
+    at flushMicrotasks (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/@angular/core/@angular/core/testing.es5.js?:446:29)
+</failure>
+  </testcase>
+  <testcase name="CatalogComponent Clicking on any indicator icon should show the appropriate image" time="0.05" classname="unit.CatalogComponent">
+    <failure type="">TypeError: Cannot read property 'click' of undefined
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:141:18)
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/@angular/core/@angular/core/testing.es5.js?:374:26)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:128:39)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:387:32)
+    at Zone.run (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:138:43)
+    at runInTestZone (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/jasmine-patch.js?:139:34)
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/jasmine-patch.js?:154:20)
+</failure>
+  </testcase>
+  <testcase name="CatalogComponent when slide enabled should change the image for every 3 seconds" time="0.054" classname="unit.CatalogComponent">
+    <failure type="">Expected spy slideChange to have been called.
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:155:39)
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/@angular/core/@angular/core/testing.es5.js?:374:26)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:128:39)
+</failure>
+  </testcase>
+  <testcase name="CatalogComponent when slide enabled also user interaction like previous, next or indecator should work as expected" time="0.064" classname="unit.CatalogComponent">
+    <failure type="">Expected spy slideChange to have been called.
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:173:47)
+    at step (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:32:23)
+    at Object.eval [as next] (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:13:53)
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:7:71)
+</failure>
+  </testcase>
+  <testcase name="CatalogComponent uncheck slide should stop changing the image for every 3 seconds" time="0.044" classname="unit.CatalogComponent">
+    <failure type="">Expected spy slideChange to have been called.
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:197:47)
+    at step (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:32:23)
+    at Object.eval [as next] (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:13:53)
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:7:71)
+</failure>
+  </testcase>
+  <testcase name="AppComponent should create the catalog-viewer app" time="0.137" classname="unit.AppComponent">
+    <failure type="">Expected 0 to be 4.
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/app.component.spec.ts?:51:30)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at AsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/async-test.js?:106:39)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
+</failure>
+  </testcase>
+  <testcase name="AppComponent page should contain the catalog UI elements" time="0.068" classname="unit.AppComponent">
+    <failure type="">Expected 0 to be 4.
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/app.component.spec.ts?:60:30)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at AsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/async-test.js?:106:39)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
+</failure>
+  </testcase>
+  <testcase name="CatalogItemsComponent click/hover on catalog thumb should update the viewer image" time="0.023" classname="unit.CatalogItemsComponent">
+    <failure type="">Expected spy onImageSelect to have been called.
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog-items/catalog-items.component.spec.ts?:47:45)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
+</failure>
+    <failure type="">Expected spy onImageSelect to have been called with [ Object({ thumb: '/assets/images/thumb/tea-light-thumb.jpeg', image: '/assets/images/tea-light.jpeg' }), 0 ] but it was never called.
+    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog-items/catalog-items.component.spec.ts?:48:45)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
+</failure>
+  </testcase>
+  <testcase name="CatalogItemsComponent the first catalog thumb should have a background image &quot;/assets/images/thumb/mobile-front-thumb.jpeg&quot;" time="0.019" classname="unit.CatalogItemsComponent">
+    <failure type="">Expected 'catalog item' to contain 'thumb-select'.
+    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog-items/catalog-items.component.spec.ts?:57:36)
+    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
+    at AsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/async-test.js?:106:39)
+    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
+</failure>
+  </testcase>
   <system-out>
     <![CDATA[
 ]]>

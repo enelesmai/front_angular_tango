@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogComponent implements OnInit {
 
-  catalogSelected: Catalog;
+  public catalogSelected: Catalog;
   currentIndex: number;
   slideAtive = false;
   slideDuration = 3000;
   slideTimer = null;
-  catalogs: Array<Catalog> = [
+  public catalogs: Array<Catalog> = [
     {
       thumb: '/assets/images/thumb/tea-light-thumb.jpeg',
       image: '/assets/images/tea-light.jpeg'
@@ -34,19 +34,20 @@ export class CatalogComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-   
+    this.currentIndex = 0;
+    this.catalogSelected = this.catalogs[this.currentIndex];
   }
 
   selectedCatalog(index: number) {
-    
+    this.catalogSelected = this.catalogs[index];
   }
 
   previousClick() {
-    
+    this.selectedCatalog(this.currentIndex===0 ? this.catalogs.length-1: this.currentIndex-1);
   }
 
   nextClick() {
-    
+    this.selectedCatalog(this.currentIndex===this.catalogs.length-1 ? 0: this.currentIndex +1);
   }
 
   slideChange(checked) {
