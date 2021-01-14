@@ -9,23 +9,23 @@ describe('CatalogComponent', () => {
   let component: CatalogComponent;
   let fixture: ComponentFixture<CatalogComponent>;
   const catalog = [
-      {
-        thumb: '/assets/images/thumb/tea-light-thumb.jpeg',
-        image: '/assets/images/tea-light.jpeg'
-      },
-      {
-        thumb: '/assets/images/thumb/white-light-thumb.jpeg',
-        image: '/assets/images/white-light.jpeg',
-      },
-      {
-        thumb: '/assets/images/thumb/pink-light-thumb.jpeg',
-        image: '/assets/images/pink-light.jpeg',
-      },
-      {
-        thumb: '/assets/images/thumb/tea-light-thumb.jpeg',
-        image: '/assets/images/tea-light.jpeg',
-      }
-    ];
+    {
+      thumb: '/assets/images/thumb/mobile-front-thumb.jpeg',
+      image: '/assets/images/mobile-front.jpeg'
+    },
+    {
+      thumb: '/assets/images/thumb/white-light-thumb.jpeg',
+      image: '/assets/images/white-light.jpeg',
+    },
+    {
+      thumb: '/assets/images/thumb/pink-light-thumb.jpeg',
+      image: '/assets/images/pink-light.jpeg',
+    },
+    {
+      thumb: '/assets/images/thumb/tea-light-thumb.jpeg',
+      image: '/assets/images/tea-light.jpeg',
+    }
+  ];
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -59,7 +59,6 @@ describe('CatalogComponent', () => {
     const thumb = nativeElement.querySelectorAll('.catalog.item');
     expect(thumb.length).toBe(catalog.length);
   }));
-
 
   it('Clicking on previous button should show the previous image', fakeAsync( () => {
     component.catalogs = catalog;
@@ -120,7 +119,7 @@ describe('CatalogComponent', () => {
     });
   }));
     
-     it('when slide enabled should change the image for every 3 seconds', fakeAsync( () => {
+  it('when slide enabled should change the image for every 3 seconds', fakeAsync( () => {
     component.catalogs = catalog;
     const nativeElement = fixture.nativeElement;
     spyOn(component, 'slideChange');

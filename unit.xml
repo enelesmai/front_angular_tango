@@ -1,107 +1,26 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 87.0.4280 (Windows 10.0.0)" package="unit" timestamp="2021-01-13T17:24:19" id="0" hostname="XFLORES-LAPTOP" tests="16" errors="0" failures="8" time="0.817">
+<testsuite name="HeadlessChrome 87.0.4280 (Windows 10.0.0)" package="unit" timestamp="2021-01-14T02:39:12" id="0" hostname="XFLORES-LAPTOP" tests="16" errors="0" failures="0" time="1.007">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/87.0.4280.141 Safari/537.36"/>
   </properties>
-  <testcase name="AppComponent should create the catalog-viewer app" time="0.133" classname="unit.AppComponent"/>
-  <testcase name="AppComponent page should contain the catalog UI elements" time="0.079" classname="unit.AppComponent"/>
-  <testcase name="CatalogItemsComponent click/hover on catalog thumb should update the viewer image" time="0.026" classname="unit.CatalogItemsComponent">
-    <failure type="">Expected spy onImageSelect to have been called.
-    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog-items/catalog-items.component.spec.ts?:47:45)
-    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
-    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
-    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
-</failure>
-    <failure type="">Expected spy onImageSelect to have been called with [ Object({ thumb: '/assets/images/thumb/tea-light-thumb.jpeg', image: '/assets/images/tea-light.jpeg' }), 0 ] but it was never called.
-    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog-items/catalog-items.component.spec.ts?:48:45)
-    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
-    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
-    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
-</failure>
-  </testcase>
-  <testcase name="CatalogItemsComponent the first catalog thumb should have a background image &quot;/assets/images/thumb/mobile-front-thumb.jpeg&quot;" time="0.023" classname="unit.CatalogItemsComponent"/>
-  <testcase name="CatalogItemsComponent selected thumb should be highlighted with blue border by applying css class &quot;thumb-select" time="0.024" classname="unit.CatalogItemsComponent">
-    <failure type="">Expected 'catalog item thumb-select' not to contain 'thumb-select'.
-    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog-items/catalog-items.component.spec.ts?:68:44)
-    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
-    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
-    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
-</failure>
-    <failure type="">Expected 'catalog item ' to contain 'thumb-select'.
-    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog-items/catalog-items.component.spec.ts?:69:40)
-    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
-    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
-    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
-</failure>
-  </testcase>
-  <testcase name="CatalogViewComponent catalog view should display first img element by default" time="0.022" classname="unit.CatalogViewComponent"/>
-  <testcase name="CatalogComponent should catalog-view load with first item of catalog" time="0.053" classname="unit.CatalogComponent">
-    <failure type="">Expected '/assets/images/mobile-front.jpeg' to contain '/assets/images/tea-light.jpeg'.
-    at Object.eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:82:49)
-    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
-    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:128:39)
-    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:387:32)
-</failure>
-  </testcase>
-  <testcase name="CatalogComponent catalog thumb icons length should be equal to catalog items length" time="0.043" classname="unit.CatalogComponent"/>
-  <testcase name="CatalogComponent Clicking on previous button should show the previous image" time="0.061" classname="unit.CatalogComponent">
-    <failure type="">Expected '/assets/images/mobile-front.jpeg' to contain '/assets/images/pink-light.jpeg'.
-    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:100:53)
-    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
-    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
-    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
-</failure>
-  </testcase>
-  <testcase name="CatalogComponent Clicking on next button should show the next image" time="0.051" classname="unit.CatalogComponent">
-    <failure type="">Expected '/assets/images/mobile-front.jpeg' to contain '/assets/images/white-light.jpeg'.
-    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:110:53)
-    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
-    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
-    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
-</failure>
-  </testcase>
-  <testcase name="CatalogComponent Clicking on next button in the last item should show the first image" time="0.055" classname="unit.CatalogComponent">
-    <failure type="">Expected '/assets/images/mobile-front.jpeg' to contain '/assets/images/tea-light.jpeg'.
-    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:123:53)
-    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
-    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
-    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
-</failure>
-  </testcase>
-  <testcase name="CatalogComponent Clicking on previous button in the first item should show the last image" time="0.059" classname="unit.CatalogComponent">
-    <failure type="">Expected '/assets/images/mobile-front.jpeg' to contain '/assets/images/tea-light.jpeg'.
-    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:133:53)
-    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
-    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
-    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
-</failure>
-  </testcase>
-  <testcase name="CatalogComponent Clicking on any indicator icon should show the appropriate image" time="0.045" classname="unit.CatalogComponent">
-    <failure type="">Expected '/assets/images/mobile-front.jpeg' to contain '/assets/images/pink-light.jpeg'.
-    at eval (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/src/app/components/catalog/catalog.component.spec.ts?:143:53)
-    at ZoneDelegate.invoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/zone.js?:388:26)
-    at FakeAsyncTestZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/fake-async-test.js?:452:33)
-    at ProxyZoneSpec.onInvoke (webpack:///C:/workspace/tango/789a01d1-990f-4e7a-8925-7253da34717a/~/zone.js/dist/proxy.js?:125:39)
-</failure>
-  </testcase>
-  <testcase name="CatalogComponent when slide enabled should change the image for every 3 seconds" time="0.054" classname="unit.CatalogComponent"/>
-  <testcase name="CatalogComponent when slide enabled also user interaction like previous, next or indecator should work as expected" time="0.034" classname="unit.CatalogComponent"/>
-  <testcase name="CatalogComponent uncheck slide should stop changing the image for every 3 seconds" time="0.055" classname="unit.CatalogComponent"/>
+  <testcase name="AppComponent should create the catalog-viewer app" time="0.159" classname="unit.AppComponent"/>
+  <testcase name="AppComponent page should contain the catalog UI elements" time="0.089" classname="unit.AppComponent"/>
+  <testcase name="CatalogItemsComponent click/hover on catalog thumb should update the viewer image" time="0.031" classname="unit.CatalogItemsComponent"/>
+  <testcase name="CatalogItemsComponent the first catalog thumb should have a background image &quot;/assets/images/thumb/mobile-front-thumb.jpeg&quot;" time="0.025" classname="unit.CatalogItemsComponent"/>
+  <testcase name="CatalogItemsComponent selected thumb should be highlighted with blue border by applying css class &quot;thumb-select" time="0.023" classname="unit.CatalogItemsComponent"/>
+  <testcase name="CatalogViewComponent catalog view should display first img element by default" time="0.02" classname="unit.CatalogViewComponent"/>
+  <testcase name="CatalogComponent should catalog-view load with first item of catalog" time="0.064" classname="unit.CatalogComponent"/>
+  <testcase name="CatalogComponent catalog thumb icons length should be equal to catalog items length" time="0.066" classname="unit.CatalogComponent"/>
+  <testcase name="CatalogComponent Clicking on previous button should show the previous image" time="0.076" classname="unit.CatalogComponent"/>
+  <testcase name="CatalogComponent Clicking on next button should show the next image" time="0.063" classname="unit.CatalogComponent"/>
+  <testcase name="CatalogComponent Clicking on next button in the last item should show the first image" time="0.059" classname="unit.CatalogComponent"/>
+  <testcase name="CatalogComponent Clicking on previous button in the first item should show the last image" time="0.063" classname="unit.CatalogComponent"/>
+  <testcase name="CatalogComponent Clicking on any indicator icon should show the appropriate image" time="0.063" classname="unit.CatalogComponent"/>
+  <testcase name="CatalogComponent when slide enabled should change the image for every 3 seconds" time="0.072" classname="unit.CatalogComponent"/>
+  <testcase name="CatalogComponent when slide enabled also user interaction like previous, next or indecator should work as expected" time="0.058" classname="unit.CatalogComponent"/>
+  <testcase name="CatalogComponent uncheck slide should stop changing the image for every 3 seconds" time="0.076" classname="unit.CatalogComponent"/>
   <system-out>
-    <![CDATA[HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', undefined
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-,HeadlessChrome 87.0.4280 (Windows 10.0.0) LOG: 'current', Object{thumb: '/assets/images/thumb/mobile-front-thumb.jpeg', image: '/assets/images/mobile-front.jpeg'}
-
+    <![CDATA[
 ]]>
   </system-out>
   <system-err/>

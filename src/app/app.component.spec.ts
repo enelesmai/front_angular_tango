@@ -19,16 +19,16 @@ describe('AppComponent', () => {
       image: '/assets/images/mobile-front.jpeg'
     },
     {
-      thumb: '/assets/images/thumb/mobile-back-thumb.jpeg',
-      image: '/assets/images/mobile-back.jpeg',
+      thumb: '/assets/images/thumb/white-light-thumb.jpeg',
+      image: '/assets/images/white-light.jpeg',
     },
     {
-      thumb: '/assets/images/thumb/mobile-details-thumb.jpeg',
-      image: '/assets/images/mobile-details.jpeg',
+      thumb: '/assets/images/thumb/pink-light-thumb.jpeg',
+      image: '/assets/images/pink-light.jpeg',
     },
     {
-      thumb: '/assets/images/thumb/mobile-flat-view-thumb.jpeg',
-      image: '/assets/images/mobile-flat-view.jpeg',
+      thumb: '/assets/images/thumb/tea-light-thumb.jpeg',
+      image: '/assets/images/tea-light.jpeg',
     }
   ];
 

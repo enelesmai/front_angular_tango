@@ -9,8 +9,8 @@ describe('CatalogViewComponent', () => {
   let fixture: ComponentFixture<CatalogViewComponent>;
   const catalog = [
     {
-      thumb: '/assets/images/thumb/tea-light-thumb.jpeg',
-      image: '/assets/images/tea-light.jpeg'
+      thumb: '/assets/images/thumb/mobile-front-thumb.jpeg',
+      image: '/assets/images/mobile-front.jpeg'
     },
     {
       thumb: '/assets/images/thumb/white-light-thumb.jpeg',
